@@ -28,6 +28,12 @@ html {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.secondary-button {
+  font-size: 16px;
+  color: #0077b5;
+  border: none;
+}
+
 .primary-button:hover {
   background-color: #005e91;
   cursor: pointer;

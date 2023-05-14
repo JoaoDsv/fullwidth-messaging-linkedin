@@ -6,6 +6,12 @@
   "host_permissions": ["https://www.linkedin.com/messaging/thread/*"],
   "permissions": ["scripting"],
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon-default.png"
+  },
+  "icons": {
+    "16": "icon-default.png",
+    "48": "icon-default.png",
+    "128": "icon-default.png"
   }
 }

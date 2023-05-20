@@ -1,3 +1,5 @@
+'use strict';
+
 function manipulateDOM() {
   let asideElement = document.querySelector('.scaffold-layout__aside');
   asideElement.remove();

@@ -4,7 +4,7 @@
   "version": "0.1",
   "description": "Increase your Linkedin messages productivity, having a wider UI ✨",
   "host_permissions": ["https://www.linkedin.com/messaging/thread/*"],
-  "permissions": ["scripting"],
+  "permissions": ["tabs", "scripting"],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon-default.png"

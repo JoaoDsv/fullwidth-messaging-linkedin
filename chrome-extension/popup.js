@@ -1,3 +1,5 @@
+'use strict';
+
 function manipulateDOM() {
   let asideElement = document.querySelector('.scaffold-layout__aside');
   asideElement.remove();
@@ -9,20 +11,30 @@ function manipulateDOM() {
   parentElement.style.width = '96%';
 }
 
+function closePopup() {
+  window.close();
+}
+
 // once extension's popup is rendered
 document.addEventListener('DOMContentLoaded', function () {
   // add on click event on primary button
   let runButton = document.getElementById('cta-switch-to-full-width');
   runButton.addEventListener('click', function () {
     // access current tab to manipule its DOM
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-      let currentTab = tabs[0];
-      let tabId = currentTab.id;
+    try {
+      chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        let currentTab = tabs[0];
+        let tabId = currentTab.id;
 
-      chrome.scripting.executeScript({
-        target: { tabId },
-        function: manipulateDOM,
+        chrome.scripting.executeScript({
+          target: { tabId },
+          function: manipulateDOM,
+        });
       });
-    });
+    } catch (error) {
+      console.error(`failed to execute script: ${error}`);
+    } finally {
+      closePopup();
+    }
   });
 });

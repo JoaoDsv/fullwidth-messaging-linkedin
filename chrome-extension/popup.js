@@ -11,6 +11,10 @@ function manipulateDOM() {
   parentElement.style.width = '96%';
 }
 
+function closePopup() {
+  window.close();
+}
+
 // once extension's popup is rendered
 document.addEventListener('DOMContentLoaded', function () {
   // add on click event on primary button
@@ -29,6 +33,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     } catch (error) {
       console.error(`failed to execute script: ${error}`);
+    } finally {
+      closePopup();
     }
   });
 });

@@ -43,6 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // add on click event on secondary button
   let linkToLinkedin = document.getElementById('cta-navigate-to-linkedin');
   linkToLinkedin.addEventListener('click', async function () {
-    window.open('https://www.linkedin.com/messaging/', '_blank').focus();
+    try {
+      window.open('https://www.linkedin.com/messaging/', '_blank').focus();
+      closePopup();
+    } catch (error) {
+      console.error(`failed to close popup after click: ${error}`);
+    }
   });
 });

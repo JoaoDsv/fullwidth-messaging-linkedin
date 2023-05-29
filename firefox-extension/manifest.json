@@ -5,6 +5,11 @@
   "description": "Increase your Linkedin messages productivity, having a wider UI ✨",
   "host_permissions": ["https://www.linkedin.com/messaging/thread/*"],
   "permissions": ["tabs", "scripting"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{0746ac2a-fe4d-11ed-be56-0242ac120002}"
+    }
+  },
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icon-default.png"

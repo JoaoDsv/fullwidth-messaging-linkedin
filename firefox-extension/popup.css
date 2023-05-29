@@ -31,6 +31,8 @@ html {
 .secondary-button {
   font-size: 16px;
   color: #0077b5;
+  background-color: transparent;
+  text-decoration: underline;
   border: none;
 }
 

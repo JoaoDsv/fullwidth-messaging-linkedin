@@ -39,4 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
       closePopup();
     }
   });
+
+  // add on click event on secondary button
+  let linkToLinkedin = document.getElementById('cta-navigate-to-linkedin');
+  linkToLinkedin.addEventListener('click', async function () {
+    window.open('https://www.linkedin.com/messaging/', '_blank').focus();
+  });
 });

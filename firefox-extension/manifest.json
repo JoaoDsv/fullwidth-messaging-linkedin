@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Fullwidth messaging Linkedin",
+  "version": "0.1",
+  "description": "Increase your Linkedin messages productivity, having a wider UI ✨",
+  "host_permissions": ["https://www.linkedin.com/messaging/thread/*"],
+  "permissions": ["tabs", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon-default.png"
+  },
+  "icons": {
+    "16": "icon-default.png",
+    "48": "icon-default.png",
+    "128": "icon-default.png"
+  }
+}

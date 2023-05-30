@@ -1,0 +1,17 @@
+// Edit layout CSS to expand LinkedIn messaging to full width
+
+.scaffold-layout__aside {
+  display: none;
+}
+
+.global-footer-compact {
+  display: none;
+}
+
+.scaffold-layout__row.scaffold-layout__content.scaffold-layout__content--list-detail-aside.scaffold-layout__content--has-aside {
+  grid-template-columns: 1fr;
+}
+
+.scaffold-layout__inner.scaffold-layout-container.scaffold-layout-container--reflow {
+  width: 97%;
+}

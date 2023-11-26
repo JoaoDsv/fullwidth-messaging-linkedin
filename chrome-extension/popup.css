@@ -1,5 +1,5 @@
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .popup-container {
@@ -9,12 +9,12 @@ html {
   align-items: center;
   justify-content: center;
   padding: 16px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .logo {
-  height: 138px;
-  margin-bottom: 40px;
+  height: 148px;
+  margin-bottom: 50px;
 }
 
 .primary-button {

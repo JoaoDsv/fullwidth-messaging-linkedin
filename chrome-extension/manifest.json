@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "version": "0.2",
+  "version": "1.0",
   "name": "Fullwidth messaging for Linkedin",
   "description": "[Browser extension] to elevate your Linkedin messages productivity, having a wider interface ✨",
   "host_permissions": ["https://www.linkedin.com/messaging/thread/*"],
